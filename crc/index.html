@@ -1,11 +1,91 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>MyPlace</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My MyPlace</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
 </head>
 <body>
-    <h1>Willkommen auf meiner MyPlace-Webseite</h1>
-    <p>Das ist meine persönliche Webseite.</p>
+    <h1>Mein Lieblingsort: Zürichsee</h1>
+    <h2>Über diesen Ort</h2>
+    <p>Der Zürichsee ist einer <strong>meiner Lieblingsorte</strong>.
+        Ich gehe dort gerne spazieren und geniesse <em>die Aussicht.</em>
+    </p><p>Ich halte mich dort gerne auf,<br>
+        weil es ruhig und schön ist.</p>
+        <img src="images/my-place-sw.png"
+    alt="Schwarzweissbild des Zürichsees"
+    width="500">
+    <p><a href="https://www.zuerich.com/de/besuchen/zürichsee"
+        title="Mehr >Informationen über den Zürichsee">
+        Mehr über den Zürichsee erfahren
+    </a></p>
+    <h2>Was mir am Zürichsee gefällt</h2>
+    <ol>
+        <li>Die schöne Aussicht</li>
+        <li>Die ruhige Atmosphäre</li>
+        <li>Spazieren am See</li>
+        <li>Schwimmen im Sommer</li>
+        <li>Zeit mit Freunden verbringen</li>
+    </ol>
+
+    <table>
+      
+        
+            <tr>
+                <td>Platzspitz</td>
+                <td>Park</td>
+                <td>3 km</td>
+                <td>Gratis</td>
+                <td>Ruhig</td>
+                <td>Mittel</td>
+            </tr>
+        
+            <tr>
+                <td>Chinagarten</td>
+                <td>Garten</td>
+                <td>4 km</td>
+                <td>Gratis (Aussenbereich)</td>
+                <td>Ruhig</td>
+                <td>Wenige</td>
+            </tr>
+        </table>
+        <h2>ÖV-Verbindung zum Zürichsee</h2>
+
+        <p>
+            Hier kannst du eine ÖV-Verbindung
+            zum Zürichsee suchen.
+        </p>
+        
+        <form action="https://www.zvv.ch/de/fahrplan-und-informationen/fahrplan.html"
+              method="get"
+              target="_blank">
+        
+            <input type="hidden"
+                   name="tab"
+                   value="connections">
+        
+            <label for="start">Startort:</label>
+            <input type="text"
+                   id="start"
+                   name="fromname"
+                   value="Zürich HB">
+        
+            <br><br>
+        
+            <label for="ziel">Zielort:</label>
+            <input type="text"
+                   id="ziel"
+                   name="toname"
+                   value="Zürich, Bürkliplatz">
+        
+            <br><br>
+        
+            <button type="submit">
+                Verbindung suchen
+            </button>
+        
+        </form>
+        
 </body>
 </html>
